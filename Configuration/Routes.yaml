@@ -1,4 +1,14 @@
 -
+  name: 'Frontpage'
+  uriPattern: ''
+  defaults:
+    '@package':    'Newsfix.Core'
+    '@controller': 'Frontpage'
+    '@action': 'index'
+    '@format': 'html'
+
+
+-
   name: 'Flow'
   uriPattern: '<FlowSubroutes>'
   defaults:
