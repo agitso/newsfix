@@ -1,7 +1,13 @@
 /Build/
-/Configuration/
+/Configuration/Development/Settings.yaml.example
+/Configuration/Development/PackageStates.php
+/Configuration/Production/Settings.yaml.example
+/Configuration/README
+/Configuration/Testing/Settings.yaml
+/Configuration/PackageStates.php
 /Data/
-/Packages/
+/Packages/Libraries/
+/Packages/Framework/
 /Web/
 /bin/
 /Readme.txt
