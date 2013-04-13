@@ -1,9 +1,9 @@
-#sidebar {
+#sidebar-left {
 	position: fixed;
 	left: 0;
 	top: 45px;
 	bottom: 0;
-	width: 200px;
+	width: 170px;
 	float: left;
 	background-color: #52504D;
 
@@ -42,10 +42,59 @@
 		color: #F3F3F3;
         text-decoration: none;
 	}
+}
 
+#sidebar-right {
+	position: fixed;
+	right: 0;
+	top: 45px;
+	bottom: 0;
+	width: 200px;
+	float: left;
+	background-color: #52504D;
 
+	#socialFeed {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 
+	li {
+        text-shadow: 0 0 3px #151515;
+        color: #999;
+		font-size: 12px;
+		line-height: 16px;
+        padding: 10px 0 10px 10px;
+        border-top: 1px solid #666;
+        border-bottom: 1px solid #444;
 
+		list-style: none;
+		display: block;
+        a {
+            color: white;
+        }
+        img {
+            border-radius: 5px;
+            border: 1px solid #444;
+            float: left;
+            margin-top: 5px;
+            width: 45px;
+            height: 45px;
+        }
+        .title {
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+            width: 135px;
+            a {
+                color: white;
+            }
+        }
+        .subTitle {
+            color: #adadad;
+            margin-left: 5px;
+        }
+	}
 }
 
 #profileHolder {
