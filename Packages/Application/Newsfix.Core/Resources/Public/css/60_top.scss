@@ -1,0 +1,80 @@
+#top {
+	background-color: #E25F39;
+
+	height: 45px;
+
+	#logo {
+		float: left;
+		color: white;
+		font-size: 22px;
+		line-height: 45px;
+		padding-left: 10px;
+		width: 230px;
+		font-family: "Futura Light", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		font-size-adjust: 0.46;
+		font-weight: 200;
+		font-style: normal;
+
+		img {
+			display: block;
+			float: left;
+			height: 25px;
+			width: auto;
+			padding: 10px 5px 0 0;
+		}
+	}
+
+	#search {
+		float: left;
+
+		input[type="text"] {
+			display: block;
+			float: left;
+			padding: 5px;
+			width: 400px;
+			margin: 6px 0 0 0;
+			border: 0;
+			font-size: 15px;
+			line-height: 22px;
+			height: 22px;
+			border-radius: 0;
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+
+		}
+
+		input[type="submit"] {
+			display: block;
+			float: left;
+			margin: 6px 0 0 0;
+			border-radius: 4px;
+			font-size: 15px;
+			line-height: 22px;
+			height: 32px;
+			padding: 5px 15px;
+			border: 0;
+			border-radius: 0;
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+			background-color: #eee;
+			border-left: solid #ddd 1px;
+			color: #999;
+		}
+	}
+
+	#account {
+		float: right;
+		color: white;
+		font-size: 18px;
+		line-height: 51px;
+		padding-right: 10px;
+		font-family: "Futura Light", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		font-size-adjust: 0.46;
+		font-weight: 200;
+		font-style: normal;
+
+		.btn-group {
+			display: block;
+		}
+	}
+}

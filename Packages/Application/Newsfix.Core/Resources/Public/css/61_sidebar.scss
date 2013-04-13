@@ -1,0 +1,39 @@
+#sidebar {
+	position: fixed;
+	left: 0;
+	top: 45px;
+	bottom: 0;
+	width: 200px;
+	float: left;
+	background-color: #52504D;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+
+		font-size: 14px;
+		line-height: 28px;
+
+		list-style: none;
+		display: block;
+		padding-left: 10px;
+
+		&.act {
+			background-color: #42403E;
+		}
+
+		border-bottom: solid #565552 1px;
+	}
+
+	a {
+		color: #F3F3F3;
+	}
+
+
+
+
+}

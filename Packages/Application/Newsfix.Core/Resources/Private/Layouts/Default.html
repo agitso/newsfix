@@ -10,6 +10,21 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width, minimum-scale=1.0" />
 		<script type="text/javascript" src="{f:uri.resource(path:js)}"></script>
 		<link rel="stylesheet" href="{f:uri.resource(path:css)}" media="all" />
+
+
+		<script type="text/javascript">
+		WebFontConfig = { fontdeck: { id: '32017' } };
+
+		(function() {
+		  var wf = document.createElement('script');
+		  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+		  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		  wf.type = 'text/javascript';
+		  wf.async = 'true';
+		  var s = document.getElementsByTagName('script')[0];
+		  s.parentNode.insertBefore(wf, s);
+		})();
+		</script>
     </head>
     <body>
 		<f:render section="Content" />
