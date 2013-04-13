@@ -14,26 +14,63 @@
 	}
 
 	li {
-
-		font-size: 14px;
-		line-height: 28px;
+        text-shadow: 0 0 1px #151515;
+		font-size: 13px;
+		line-height: 34px;
 
 		list-style: none;
 		display: block;
 		padding-left: 10px;
 
+        img {
+            margin-top: -4px;
+            margin-right: 6px;
+        }
+
 		&.act {
 			background-color: #42403E;
 		}
 
+        &:hover {
+            background-color: #151515;
+        }
+
 		border-bottom: solid #565552 1px;
 	}
 
-	a {
+	a, a:hover {
 		color: #F3F3F3;
+        text-decoration: none;
 	}
 
 
 
+
+}
+
+#profileHolder {
+    background-color: #42403D;
+    padding: 10px;
+    #profileImage {
+        border: 2px solid #666;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        float: left;
+    }
+    .name {
+        margin: 3px 10px;
+        float: left;
+        h4 {
+            margin: 0 0 2px 0;
+            color: white;
+            font-weight: normal;
+            text-shadow: 0 0 1px #151515;
+        }
+        a {
+            color: #D34F25;
+            text-shadow: 0 0 1px #151515;
+        }
+    }
 
 }

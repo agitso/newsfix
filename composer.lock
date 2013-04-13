@@ -986,7 +986,7 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.FLOW3.git",
-                "reference": "d404fb637168656c7731d2734c286547c65b46a6"
+                "reference": "37928940a50cfdae128c157d02c5c318ac3c5f84"
             },
             "require": {
                 "composer/installers": ">=1.0.2,<1.1",
@@ -1015,7 +1015,7 @@
             ],
             "description": "TYPO3 Flow Application Framework",
             "homepage": "http://flow.typo3.org",
-            "time": "2013-04-12 16:29:29"
+            "time": "2013-04-13 08:46:09"
         },
         {
             "name": "typo3/fluid",

@@ -10,29 +10,27 @@
 			<input type="text" placeholder="Prøv f.eks. &quot;offentlighedsloven SF&quot;"/>
 			<input type="submit" class="btn" value="Søg"/>
 		</div>
-		<div id="account">
-			<div class="btn-group">
-				<button class="btn dropdown-toggle" data-toggle="dropdown">Jesper Jensen <span class="caret"></span></button>
-				<ul class="dropdown-menu">
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li class="divider"></li>
-					<li><a href="#">Separated link</a></li>
-				</ul>
-			</div>
-		</div>
+
+        <div id="upgrade">
+            <img id="upgradeIcon" src="{f:uri.resource(path:'img/unlock.png')}" width="15"/> <a href="#">Upgrade</a>
+        </div>
 	</div>
 	<div id="sidebar-and-content">
 		<div id="sidebar">
+            <div id="profileHolder" class="clearfix">
+                <img src="{f:uri.resource(path:'img/profile.jpg')}" id="profileImage" />
+                <div class="name">
+                    <h4>Welcome</h4>
+                    <a href="#">Anders</a>
+                </div>
+            </div>
+
 			<ul>
-				<li><a href="#">Dine nyheder</a></li>
-				<li><a href="#">Your news</a></li>
-				<li><a href="#">Your news</a></li>
-				<li><a href="#">Your news</a></li>
-				<li><a href="#">Your news</a></li>
-				<li><a href="#">Your news</a></li>
-				<li><a href="#">Your news</a></li>
+				<li><img src="{f:uri.resource(path:'img/person.png')}" width="15"/><a href="#">Your News</a></li>
+				<li><img src="{f:uri.resource(path:'img/star.png')}" width="15"/><a href="#">Top News</a></li>
+				<li><img src="{f:uri.resource(path:'img/friends.png')}" width="15"/><a href="#">Follow People</a></li>
+				<li><img src="{f:uri.resource(path:'img/save.png')}" width="15"/><a href="#">Saved</a></li>
+				<li><img src="{f:uri.resource(path:'img/clock.png')}" width="15"/><a href="#">History</a></li>
 			</ul>
 
 

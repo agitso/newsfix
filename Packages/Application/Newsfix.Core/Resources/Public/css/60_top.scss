@@ -1,7 +1,10 @@
 #top {
 	background-color: #E25F39;
-
+    position: fixed;
 	height: 45px;
+    right: 0;
+    left: 0;
+    top: 0;
 
 	#logo {
 		float: left;
@@ -62,19 +65,16 @@
 		}
 	}
 
-	#account {
-		float: right;
-		color: white;
-		font-size: 18px;
-		line-height: 51px;
-		padding-right: 10px;
-		font-family: "Futura Light", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-		font-size-adjust: 0.46;
-		font-weight: 200;
-		font-style: normal;
-
-		.btn-group {
-			display: block;
-		}
-	}
+	#upgrade {
+        float: right;
+        margin-top: 12px;
+        a {
+            color: white;
+            padding-right: 20px;
+            padding-left: 2px;
+        }
+        #upgradeIcon {
+            margin-top: -4px;
+        }
+    }
 }
