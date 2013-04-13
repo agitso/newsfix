@@ -3,3 +3,9 @@ TYPO3:
     object:
       excludeClasses:
        'kriswallsmith.assetic' : ['.*']
+
+    persistence:
+      backendOptions:
+        dbname: 'newsfix'       # adjust to your database name
+        user: 'root'             # adjust to your database user
+        password: '1234'         # adjust to your database password

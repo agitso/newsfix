@@ -34,6 +34,21 @@
 				<li><a href="#">Your news</a></li>
 				<li><a href="#">Your news</a></li>
 			</ul>
+		</div>
+		<div id="content">
+			<f:for each="{articles}" as="article">
+				<h1>{article.title}</h1>
+				<p class="abstract">{article.abstract}</p>
+				<f:for each="{article.content}" as="content">
+					<f:if condition="{content.title}">
+						<h2>{content.title}</h2>
+					</f:if>
+					<p>{content.content}</p>
+				</f:for>
+
+
+			</f:for>
+
 
 
 		</div>
