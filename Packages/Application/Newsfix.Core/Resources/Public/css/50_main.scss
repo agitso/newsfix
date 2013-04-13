@@ -5,6 +5,119 @@ body {
 	font-style: normal;
 }
 
+#modalBox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+
+    #upgradeBox {
+        position: fixed;
+        top: 13%;
+        left: 50%;
+        margin: 0 -450px;
+        height: 500px;
+        width: 900px;
+
+        .box {
+            position: relative;
+            margin: 40px 24px;
+            padding: 20px 0 10px 0;
+            text-align: center;
+            width: 250px;
+            background-color: white;
+            border: 1px solid #b6b7b8;
+            float: left;
+            h3 {
+                font-family:"Futura Medium", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size-adjust:0.48; font-weight:normal; font-style:normal;
+                font-size: 35px;
+                margin-bottom: 30px;
+            }
+            .subHeading {
+                font-family:"Futura Medium", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size-adjust:0.48; font-weight:normal; font-style:normal;
+                font-size: 15px;
+            }
+            .details {
+                background-color: #f7f7f7;
+                padding: 10px 0;
+                margin: 30px 0 20px 0;
+                font-size: 13px;
+                line-height: 15px;
+            }
+
+            .button {
+                display: block;
+                font-size: 100%;
+                margin: 0 3em .5em;
+                padding-left: 1em;
+                padding-right: 1em;
+                border: 1px solid rgba(0,0,0,0.4);
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.6);
+                -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.6);
+                box-shadow: inset 0 1px 1px rgba(255,255,255,0.6);
+                color: #333;
+                display: inline-block;
+                font-family:"Futura Medium", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size-adjust:0.48; font-weight:normal; font-style:normal;
+                font-size: 1.375em;
+                background-color: #dfdfdf;
+                background-image: -moz-linear-gradient(top,#efefef,#c8c8c8);
+                background-image: -ms-linear-gradient(top,#efefef,#c8c8c8);
+                background-image: -webkit-gradient(linear,0 0,0 100%,from(#efefef),to(#c8c8c8));
+                background-image: -webkit-linear-gradient(top,#efefef,#c8c8c8);
+                background-image: -o-linear-gradient(top,#efefef,#c8c8c8);
+                background-image: linear-gradient(top,#efefef,#c8c8c8);
+                background-repeat: repeat-x;
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr=#ffefefef, endColorstr=#ffc8c8c8, GradientType=0 )";
+                margin: 0 0 .9166666667em 0;
+                padding: .75em 1.875em .5625em;
+                text-align: center;
+                text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+                filter: none!important;
+            }
+            .button.highlight {
+                border: 1px solid #7ea613;
+                -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.8);
+                -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.8);
+                box-shadow: inset 0 1px 1px rgba(255,255,255,0.8);
+                color: #FFF;
+                -webkit-font-smoothing: antialiased;
+                background-color: #9eca3b;
+                background-image: -moz-linear-gradient(top,#acd341,#88bd32);
+                background-image: -ms-linear-gradient(top,#acd341,#88bd32);
+                background-image: -webkit-gradient(linear,0 0,0 100%,from(#acd341),to(#88bd32));
+                background-image: -webkit-linear-gradient(top,#acd341,#88bd32);
+                background-image: -o-linear-gradient(top,#acd341,#88bd32);
+                background-image: linear-gradient(top,#acd341,#88bd32);
+                background-repeat: repeat-x;
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr=#ffacd341, endColorstr=#ff88bd32, GradientType=0 )";
+                text-shadow: 0 -1px 0 #72942a;
+            }
+        }
+
+        #trialBanner {
+            position: absolute;
+            top: -9px;
+            right: -11px;
+        }
+
+        #decideLater {
+            font-size: 20px;
+            margin: 0 auto;
+            width: 200px;
+            text-align: center;
+            font-family:"Futura Medium", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size-adjust:0.48; font-weight:normal; font-style:normal;
+        }
+
+    }
+}
+
 
 #content {
 	margin: 65px 220px 0 220px;
