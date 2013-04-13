@@ -1,9 +1,54 @@
 body {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight: 300;
+	font-family: "Futura Light", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size-adjust: 0.46;
+	font-weight: 200;
+	font-style: normal;
 }
 
 
 #content {
-	margin: 0 50px 0 250px;
+	margin: 65px 220px 0 220px;
+
+	.article {
+		width: 440px;
+		border: solid #999 1px;
+		padding: 10px;
+		margin: 0 30px 30px 0;
+		float: left;
+
+
+		.content {
+			font-size: 16px;
+		}
+
+		.header {
+			font-family:"Skolar Semibold", Georgia, serif; font-weight:600; font-style:normal;
+			font-size: 16px;
+		}
+
+		.date {
+			color: #999;
+			text-align: right;
+			font-size: 12px;
+		}
+
+		.image {
+			img {
+				display: block;
+			}
+
+			padding-bottom: 10px;
+		}
+
+		.abstract {
+			font-family:"Futura Medium", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size-adjust:0.48; font-weight:normal; font-style:normal;
+		}
+
+		.meta {
+			text-align: right;
+			font-family:"Futura Medium", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size-adjust:0.48; font-weight:normal; font-style:normal;
+		}
+
+
+	}
 }
