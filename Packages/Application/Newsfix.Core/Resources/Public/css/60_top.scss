@@ -47,7 +47,7 @@
 
 #filterBar {
     background-color: #222;
-    font-size: 13px;
+    font-size: 14px;
     position: fixed;
    	height: 39px;
     right: 200px;
@@ -62,10 +62,10 @@
         margin: 9px 30px;
     }
     a {
-        color: #666;
+        color: #888;
     }
     ul {
-        margin: 10px 20px 0 20px;
+        margin: 10px 20px 0 0;
         list-style: none;
         float: right;
     }

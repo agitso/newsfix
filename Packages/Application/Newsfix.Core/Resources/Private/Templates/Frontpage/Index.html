@@ -43,6 +43,18 @@
 				<li><img src="{f:uri.resource(path:'img/save.png')}" width="15"/><a href="#">Saved</a></li>
 				<li><img src="{f:uri.resource(path:'img/clock.png')}" width="15"/><a href="#">History</a></li>
 			</ul>
+
+
+            <div id="extraInfo">
+                <h3>The Journalist</h3>
+                <img src="{f:uri.resource(path:'img/journalist.jpg')}" width="130"/>
+                <br />
+                <ul id="twitter">
+                    <li>I had a great day! <span>43 mins</span></li>
+                    <li>This was just nice and I love it <span>2 hours</span></li>
+                    <li>I don't have anything to write <span>9 hours</span></li>
+                </ul>
+            </div>
 		</div>
 		<div id="content" class="clearfix">
 			<f:for each="{articles}" as="article">

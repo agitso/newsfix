@@ -42,6 +42,35 @@
 		color: #F3F3F3;
         text-decoration: none;
 	}
+
+    #extraInfo {
+        height: 300px;
+        width: 150px;
+        background-color: #42403D;
+        border-top: 1px solid #666;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        text-shadow: 0 0 1px #151515;
+        color: white;
+        padding: 0 10px 10px 10px;
+        h3 {
+            font-size: 14px;
+            margin: 0;
+        }
+        #twitter {
+            margin: 0;
+            li {
+                padding: 5px 0;
+                line-height: 14px;
+                border: 0;
+                border-bottom: 1px solid #555;
+                span {
+                    color: #999;
+                }
+            }
+        }
+    }
 }
 
 #sidebar-right {
@@ -54,12 +83,13 @@
 	background-color: #52504D;
 
     h3 {
-        font-size: 14px;
-        line-height: 23px;
-        background-color: #999;
+        font-size: 16px;
+        line-height: 38px;
+        background-color: #42403D;
+        color: white;
         margin: 0;
         padding: 0 10px;
-        text-shadow: 0 0 1px #888;
+        text-shadow: 0 0 1px #151515;
     }
 
     #socialFeedHolder {
@@ -67,7 +97,7 @@
         position: fixed;
         float: left;
         bottom: 0;
-        top: 58px;
+        top: 73px;
     }
 
 	#socialFeed {
