@@ -1,7 +1,7 @@
 #top {
 	background-color: #E25F39;
     position: fixed;
-	height: 45px;
+	height: 35px;
     right: 0;
     left: 0;
     top: 0;
@@ -10,64 +10,30 @@
 		float: left;
 		color: white;
 		font-size: 22px;
-		line-height: 45px;
+		line-height: 35px;
 		padding-left: 10px;
 		width: 230px;
 		font-family: "Futura Light", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 		font-size-adjust: 0.46;
 		font-weight: 200;
 		font-style: normal;
+        a, a:hover {
+            color: white;
+            text-decoration: none;
+        }
 
 		img {
 			display: block;
 			float: left;
-			height: 25px;
+			height: 20px;
 			width: auto;
-			padding: 10px 5px 0 0;
-		}
-	}
-
-	#search {
-		float: left;
-
-		input[type="text"] {
-			display: block;
-			float: left;
-			padding: 5px;
-			width: 400px;
-			margin: 6px 0 0 0;
-			border: 0;
-			font-size: 15px;
-			line-height: 22px;
-			height: 22px;
-			border-radius: 0;
-			border-top-left-radius: 4px;
-			border-bottom-left-radius: 4px;
-
-		}
-
-		input[type="submit"] {
-			display: block;
-			float: left;
-			margin: 6px 0 0 0;
-			border-radius: 4px;
-			font-size: 15px;
-			line-height: 22px;
-			height: 32px;
-			padding: 5px 15px;
-			border: 0;
-			border-radius: 0;
-			border-top-right-radius: 4px;
-			border-bottom-right-radius: 4px;
-			background-color: #eee;
-			border-left: solid #ddd 1px;
-			color: #999;
+			padding: 7px 5px 0 0;
 		}
 	}
 
 	#upgrade {
         float: right;
-        margin-top: 12px;
+        margin-top: 7px;
         a {
             color: white;
             padding-right: 20px;
@@ -81,18 +47,27 @@
 
 #filterBar {
     background-color: #222;
-    font-size: 12px;
+    font-size: 13px;
     position: fixed;
-   	height: 30px;
+   	height: 40px;
     right: 200px;
     left: 170px;
-    top: 45px;
+    top: 35px;
+
+    #search {
+        border-radius: 10px;
+        padding: 0 5px;
+        line-height: 14px;
+        font-size: 12px;
+        margin: 9px 30px;
+    }
     a {
         color: #666;
     }
     ul {
-        margin: 5px 20px 0 20px;
+        margin: 10px 20px 0 20px;
         list-style: none;
+        float: right;
     }
     li {
         margin-right: 30px;
