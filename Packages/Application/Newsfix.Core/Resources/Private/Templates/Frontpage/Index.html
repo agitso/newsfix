@@ -32,6 +32,21 @@
 				<li><img src="{f:uri.resource(path:'img/save.png')}" width="15"/><a href="#">Saved</a></li>
 				<li><img src="{f:uri.resource(path:'img/clock.png')}" width="15"/><a href="#">History</a></li>
 			</ul>
+		</div>
+		<div id="content">
+			<f:for each="{articles}" as="article">
+				<h1>{article.title}</h1>
+				<p class="abstract">{article.abstract}</p>
+				<f:for each="{article.content}" as="content">
+					<f:if condition="{content.title}">
+						<h2>{content.title}</h2>
+					</f:if>
+					<p>{content.content}</p>
+				</f:for>
+
+
+			</f:for>
+
 
 
 		</div>
