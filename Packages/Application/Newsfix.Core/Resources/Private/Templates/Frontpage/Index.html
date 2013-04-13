@@ -33,17 +33,29 @@
 				<li><img src="{f:uri.resource(path:'img/clock.png')}" width="15"/><a href="#">History</a></li>
 			</ul>
 		</div>
-		<div id="content">
+		<div id="content" class="clearfix">
 			<f:for each="{articles}" as="article">
-				<h1>{article.title}</h1>
-				<p class="abstract">{article.abstract}</p>
-				<f:for each="{article.content}" as="content">
-					<f:if condition="{content.title}">
-						<h2>{content.title}</h2>
-					</f:if>
-					<p>{content.content}</p>
-				</f:for>
-
+				<div class="article">
+					<p class="date"><f:format.date format="d.m.Y">{article.date}</f:format.date></p>
+					<div class="image">
+						<img src="{article.image}" alt="" />
+					</div>
+					<p class="header">{article.title}</p>
+					<p class="abstract">{article.abstract}</p>
+					<f:for each="{article.content}" as="content">
+						<f:if condition="{content.title}">
+							<p class="subheader">{content.title}</p>
+						</f:if>
+						<p class="content">{content.content}</p>
+					</f:for>
+					<p class="meta">
+						<f:if condition="{article.liked}">
+							<f:then>You liked this article | </f:then>
+							<f:else></f:else>
+						</f:if>
+						{article.likes} likes
+					</p>
+				</div>
 
 			</f:for>
 		</div>

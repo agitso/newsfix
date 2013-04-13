@@ -27,6 +27,11 @@ class Article {
 	protected $ordering;
 
 	/**
+	 * @var \DateTime
+	 */
+	protected $date;
+
+	/**
 	 * @var \Doctrine\Common\Collections\Collection<\Newsfix\Core\Domain\Model\Content>
 	 * @ORM\OneToMany(mappedBy="article")
 	 * @ORM\OrderBy({"ordering" = "ASC"})
@@ -74,6 +79,20 @@ class Article {
 	}
 
 	/**
+	 * @param \DateTime $date
+	 */
+	public function setDate($date) {
+		$this->date = $date;
+	}
+
+	/**
+	 * @return \DateTime
+	 */
+	public function getDate() {
+		return $this->date;
+	}
+
+	/**
 	 * @param \Newsfix\Core\Domain\Model\Content $content
 	 */
 	public function addContent($content) {
@@ -83,5 +102,25 @@ class Article {
 		$this->content->add($content);
 	}
 
+	/**
+	 * @return string
+	 */
+	public function getImage() {
+		return 'http://lorempixel.com/440/' . mt_rand(200, 500) . '?v='.mt_rand(200, 500);
+	}
+
+	/**
+	 * @return int
+	 */
+	public function getLikes() {
+		return mt_rand(0,100);
+	}
+
+	/**
+	 * @return bool
+	 */
+	public function getLiked() {
+		return mt_rand(0,1) === 1;
+	}
 
 }
