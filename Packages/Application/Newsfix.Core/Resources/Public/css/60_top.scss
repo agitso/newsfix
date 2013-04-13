@@ -78,3 +78,25 @@
         }
     }
 }
+
+#filterBar {
+    background-color: #222;
+    font-size: 12px;
+    position: fixed;
+   	height: 30px;
+    right: 200px;
+    left: 170px;
+    top: 45px;
+    a {
+        color: #666;
+    }
+    ul {
+        margin: 5px 20px 0 20px;
+        list-style: none;
+    }
+    li {
+        margin-right: 30px;
+        float: left;
+    }
+
+}
