@@ -48,4 +48,10 @@ class SetupCommandController extends \TYPO3\Flow\Cli\CommandController {
 
 		$this->articleRepository->add($article);
 	}
+
+	/**
+	 * @return void
+	 */
+	public function testCommand() {
+	}
 }
