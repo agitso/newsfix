@@ -12,4 +12,5 @@ $(function () {
 		e.preventDefault();
 		$('#modalBox').fadeOut();
 	});
+
 });

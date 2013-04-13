@@ -32,6 +32,11 @@ class Article {
 	protected $date;
 
 	/**
+	 * @var int
+	 */
+	protected $imageHeight;
+
+	/**
 	 * @var \Doctrine\Common\Collections\Collection<\Newsfix\Core\Domain\Model\Content>
 	 * @ORM\OneToMany(mappedBy="article")
 	 * @ORM\OrderBy({"ordering" = "ASC"})
@@ -41,6 +46,7 @@ class Article {
 	public function __construct() {
 		$this->content = new \Doctrine\Common\Collections\ArrayCollection();
 		$this->ordering = 0;
+		$this->imageHeight = mt_rand(200,500);
 	}
 
 	/**
@@ -103,10 +109,17 @@ class Article {
 	}
 
 	/**
+	 * @return int
+	 */
+	public function getImageHeight() {
+		return $this->imageHeight;
+	}
+
+	/**
 	 * @return string
 	 */
 	public function getImage() {
-		return 'http://lorempixel.com/440/' . mt_rand(200, 500) . '?v='.mt_rand(200, 500);
+		return 'http://lorempixel.com/440/' . $this->getImageHeight() . '?v='.mt_rand(200, 500);
 	}
 
 	/**

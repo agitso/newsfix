@@ -114,21 +114,30 @@ body {
             text-align: center;
             font-family:"Futura Medium", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size-adjust:0.48; font-weight:normal; font-style:normal;
         }
-
     }
 }
 
+a {
+	color: #E25F39;
+}
 
 #content {
-	margin: 65px 220px 0 220px;
+	position: absolute;
+	top: 74px;
+	left: 170px;
+	right: 220px;
+	bottom: 0;
+	overflow-y: scroll;
+	background-color: #ddd;
 
 	.article {
-		width: 440px;
-		border: solid #999 1px;
-		padding: 10px;
-		margin: 0 30px 30px 0;
-		float: left;
+		background-color: white;
+		border: solid #aaa 1px;
+		margin-bottom: 3px;
 
+		.inner-article {
+			padding: 20px;
+		}
 
 		.content {
 			font-size: 16px;
@@ -136,18 +145,15 @@ body {
 
 		.header {
 			font-family:"Skolar Semibold", Georgia, serif; font-weight:600; font-style:normal;
-			font-size: 16px;
-		}
+			font-size: 26px;
+			line-height: 32px;
 
-		.date {
-			color: #999;
-			text-align: right;
-			font-size: 12px;
 		}
 
 		.image {
 			img {
 				display: block;
+				border: solid #aaa 1px;
 			}
 
 			padding-bottom: 10px;
@@ -155,13 +161,64 @@ body {
 
 		.abstract {
 			font-family:"Futura Medium", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size-adjust:0.48; font-weight:normal; font-style:normal;
+			margin-bottom: 16px;
 		}
 
-		.meta {
-			text-align: right;
-			font-family:"Futura Medium", 'Gill Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size-adjust:0.48; font-weight:normal; font-style:normal;
+		.metabar {
+			border: solid #ddd 1px;
+			border-radius: 4px;
+			font-size: 14px;
+			line-height: 22px;
+			padding: 5px;
+
+			.media {
+				float: left;
+
+				img {
+					display: block;
+					float: left;
+					height: 22px;
+					width: auto;
+					margin-right: 5px;
+				}
+			}
+
+			.ago {
+				float: right;
+				margin-right: 5px;
+			}
 		}
-
-
 	}
+
+	.layout1 {
+		.article1 {
+			width: 49.7%;
+			float: left;
+			border-top: 0;
+		}
+
+		.article2 {
+			width: 49.7%;
+			float: right;
+			border-top: 0;
+		}
+
+		.article3 {
+			width: 49.7%;
+			float: right;
+		}
+
+		.article4 {
+			width: 49.7%;
+			float: left;
+		}
+	}
+
+	.layout2 {
+		.article {
+			margin-bottom: 0;
+		}
+	}
+
+
 }
