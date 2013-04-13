@@ -57,30 +57,69 @@
             </div>
 		</div>
 		<div id="content" class="clearfix">
-			<f:for each="{articles}" as="article">
-				<div class="article">
-					<p class="date"><f:format.date format="d.m.Y">{article.date}</f:format.date></p>
-					<div class="image">
-						<img src="{article.image}" alt="" />
+
+			<div class="layout1 clearfix">
+				<div class="article article1">
+					<div class="inner-article">
+						<f:render partial="Image" arguments="{width:800,height:600}" />
+						<p class="header">100 kilo kokain afsløret på havnen i Aarhus</p>
+						<p class="abstract">Udenlandsk lastvognschauffør sidder fængslet i sag om rekordstort fund af kokain. <a href="#">Læs artiklen</a></p>
+						<div class="metabar clearfix">
+							<div class="media"><img src="{f:uri.resource(path:'img/logos/jp_logo.png')}" /></div>
+							<div class="ago">2 hours ago</div>
+						</div>
 					</div>
-					<p class="header">{article.title}</p>
-					<p class="abstract">{article.abstract}</p>
-					<f:for each="{article.content}" as="content">
-						<f:if condition="{content.title}">
-							<p class="subheader">{content.title}</p>
-						</f:if>
-						<p class="content">{content.content}</p>
-					</f:for>
-					<p class="meta">
-						<f:if condition="{article.liked}">
-							<f:then>You liked this article | </f:then>
-							<f:else></f:else>
-						</f:if>
-						{article.likes} likes
-					</p>
 				</div>
 
-			</f:for>
+				<div class="article article2">
+					<div class="inner-article">
+						<f:render partial="Image" arguments="{width:800,height:300}" />
+						<p class="header">Mr. Bogart: Første Oscar var en raket over en mørk filmnation</p>
+						<p class="abstract">Det var helt nyt og uvant, da en lille nation blev beæret med filmverdenens største pris til det 60. Oscar-show 11. april 1988. <a href="#">Læs artiklen</a></p>
+						<div class="metabar clearfix">
+							<div class="media"><img src="{f:uri.resource(path:'img/logos/pol_logo.png')}" /></div>
+							<div class="ago">3 hours ago</div>
+						</div>
+					</div>
+				</div>
+				<div class="article article3">
+					<div class="inner-article">
+						<f:render partial="Image" arguments="{width:800,height:800}" />
+						<p class="header">Tiger Woods idømmes to strafslag</p>
+						<p class="abstract">Tiger Woods er blevet tildelt en straf på to slag ved major-turneringen US Masters i USA, meddeler Sky Sports. <a href="#">Læs artiklen</a></p>
+						<div class="metabar clearfix">
+							<div class="media"><img src="{f:uri.resource(path:'img/logos/tv2_logo.png')}" /></div>
+							<div class="ago">2 day ago</div>
+						</div>
+					</div>
+				</div>
+				<div class="article article4">
+					<div class="inner-article">
+						<f:render partial="Image" arguments="{width:800,height:530}" />
+						<p class="header">Supermarkeder dropper tilbud på øl og Cola</p>
+						<p class="abstract">Carlsberg og Coop skændes om priser på øl og sodavand. Nu sætter supermarkedskæden bryggeriet i skammekrogen. <a href="#">Læs artiklen</a></p>
+						<div class="metabar clearfix">
+							<div class="media"><img src="{f:uri.resource(path:'img/logos/borsen_logo.png')}" /></div>
+							<div class="ago">1 day ago</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="layout2 clearfix">
+				<div class="article">
+					<div class="inner-article">
+						<f:render partial="Image" arguments="{width:1600,height:200}" />
+						<p class="header">Skole måtte undskylde for nazi-opgave</p>
+						<p class="abstract">Engelsklærer bad elever argumentere for, at "jøder er onde og kilden til vores problemer".</p>
+						<div class="metabar clearfix">
+							<div class="media"><img src="{f:uri.resource(path:'img/logos/tv2_logo.png')}" /></div>
+							<div class="ago">2 day ago</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
         <div id="sidebar-right">

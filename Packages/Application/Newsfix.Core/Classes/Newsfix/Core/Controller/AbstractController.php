@@ -59,6 +59,7 @@ abstract class AbstractController extends \TYPO3\Flow\Mvc\Controller\ActionContr
 		$js = new \Assetic\Asset\AssetCollection(array(
 			new \Assetic\Asset\FileAsset('resource://Newsfix.Core/Public/js/vendor/jquery-1.9.1.min.js'),
 			new \Assetic\Asset\FileAsset('resource://Newsfix.Core/Public/js/vendor/bootstrap.min.js'),
+			new \Assetic\Asset\FileAsset('resource://Newsfix.Core/Public/js/vendor/jquery.masonry.min.js'),
 			new \Assetic\Asset\FileAsset('resource://Newsfix.Core/Public/js/main.js')
 		));
 
